@@ -1,0 +1,18 @@
+{
+  "name": "mysite",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./input/input.css -o ./gallary/static/gallary/styles.css --watch"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "tailwindcss": "^4.1.11"
+  },
+  "dependencies": {
+    "flowbite": "^3.1.2"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
