@@ -1,7 +1,7 @@
 /** @format */
 
 class MetmusuamGallaryManageer {
-  constructor(refreshInterval = 10, refreshIntervalThreshold = 8, primaryImage = true) {
+  constructor(refreshInterval = 10, refreshIntervalThreshold = 8, primaryImage = false) {
     if (refreshInterval < 1) {
       throw new Error("Refresh interval must be at least 1 second.");
     }
