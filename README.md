@@ -34,8 +34,8 @@ This Django app displays random artworks from the [Metropolitan Museum of Art Co
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/metmuseum-gallery-django.git
-cd metmuseum-gallery-django
+git clone https://github.com/voldi-ux/gallary.git
+cd gallary
 ```
 
 2. Create a virtual environment and activate it:
