@@ -7,6 +7,7 @@ This Django app displays random artworks from the [Metropolitan Museum of Art Co
 ## Table of Contents
 
 - [Features](#features)
+- [Approach](#Approach)
 - [Installation](#installation)
 - [Running the Django App](#running-the-django-app)
 - [Gallery Class](#gallery-class)
@@ -26,6 +27,11 @@ This Django app displays random artworks from the [Metropolitan Museum of Art Co
 - Modal popup with artwork details: title, artist, date, credit line
 - Spinner animation while fetching data
 - Retry logic if an artwork fails to load
+
+---
+## Approach
+Given that the instructions explicitly said that one should use templating engine associated with the framework used, I knew created an interactive app will be a bit of chanllenge since most UI interaction will have to be impletmented using JS + CSS. I was thus confronted with using the class based approach or functional based. From my experience, classes tend to keep application way more organized hence I went it. I did not expect the api calls to fail so frequent hence I decided to implement the retry logic. 
+
 
 ---
 
@@ -119,6 +125,6 @@ const gallery = new MetmusuamGallaryManageer(15, 5, false);
 
 ---
 ## Future work
-The app can be improved in many ways e.g adding authentication and authorizations to allow people to login into the app to save their favorit arts. We also can allow users to share their favorits arts. From a technicall perpsective we can use one the sigle page applications e.g react to improve the UX and interactivity. We can try and preload a lot more images other than one into a buffer array. Perhaps caching can also be added to reduce number of requests on the server for images that the Gallary has already downloaded. 
+The app can be improved in many ways e.g adding authentication and authorizations to allow people to login into the app to save their favorit arts. We also can allow users to share their favorits arts. From a technicall perpsective we can use one the sigle page applications e.g react to improve the UX and interactivity. We can try and preload a lot more images other than one into a buffer array. Perhaps caching can also be added to reduce number of requests on the server for images that the Gallary has already downloaded and at the same time allow users to maybe sift the buffer by pressing next or prev. Additionally, I we can proceed by allowing the user to configure the Gallary on thier own, allow them to choose the refreshrate etc.  
 
 ---
