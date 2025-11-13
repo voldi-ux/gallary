@@ -92,7 +92,7 @@ new MetmusuamGallaryManageer(refreshInterval, refreshIntervalThreshold, primaryI
 |-----------|---------|---------|-------------|
 | `refreshInterval` | `number` | `10` | Time in seconds before the image automatically refreshes. Minimum is 1 second. |
 | `refreshIntervalThreshold` | `number` | `8` | Time in seconds before the counter reaches 0 when the next image is prefetched. Helps avoid delays during refresh. |
-| `primaryImage` | `boolean` | `true` | If `true`, prefers the high-resolution primary image from the API. If `false`, prefers smaller images when available. |
+| `primaryImage` | `boolean` | `false` | If `true`, prefers the high-resolution primary image from the API. If `false`, prefers smaller images when available. |
 
 ### Key Methods
 
